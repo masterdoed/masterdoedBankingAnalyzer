@@ -22,7 +22,7 @@ from tabulate import tabulate
 #Info
 
 
-df=pandas.read_csv('test.csv',encoding='ISO-8859-1', error_bad_lines=False, sep=';', decimal=',')
+df=pandas.read_csv('/Users/masterdoed/Downloads/test.csv',encoding='ISO-8859-1', error_bad_lines=False, sep=';', decimal=',')
 df['Betrag']=pandas.to_numeric(df['Betrag'])
 df['Betrag']=df['Betrag'].astype(float)
 
